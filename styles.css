@@ -1,0 +1,388 @@
+/* GENERAL STYLES */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+  scroll-padding-top: 80px; /* Adjust this value to match the height of your fixed header */
+}
+
+/* HEADER */
+header {
+    font-family: 'Abril Fatface', serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 35px;
+    padding-left: 100px;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    padding-right: 100px;
+    position: relative;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* SECTIONS */
+section {
+    padding: 4vh 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    width: 100%; /* Ensures section takes up full width */
+}
+
+#home {
+    padding-top: 20vh; /* Add padding to move the home section down */
+    background-color: #f0f0f0;
+}
+
+/* PROFILE SECTION */
+#home .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 5rem;
+}
+
+.image-container {
+    display: flex;
+    height: 450px;
+    width: 450px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-content {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text_p1 {
+    text-align: center;
+    margin-bottom: -2rem;
+}
+
+.section_text_p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+/* ABOUT SECTION */
+#about {
+    padding: 4rem 2rem; /* Adjust padding as needed */
+    background-color: #ffffff; /* Ensure background color is applied */
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem; /* Space between the boxes */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+/* Ensure the box has enough space for the content */
+.box {
+    flex: 1;
+    min-width: 300px; /* Minimum width of the box */
+    max-width: 600px; /* Maximum width of the box */
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.box-logo {
+    width: 80px; /* Adjust size of logo */
+    height: auto;
+    margin-bottom: 1rem; /* Space below the logo */
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.box p {
+    font-size: 1rem;
+}
+
+.section-description {
+    text-align: center; /* Center-align the text */
+    font-size: 1.1rem; /* Adjust font size for better readability */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin: 0 auto; /* Center-align the paragraph */
+    max-width: 800px; /* Limit the width for better readability */
+    padding: 1rem; /* Add padding around the text */
+    color: #333; /* Darker text color for contrast */
+    font-family: Arial, sans-serif; /* Optional: change font-family for better style */
+    padding-left: 1.5rem; /* Add padding to the left of the text */
+    border-radius: 0.5rem; /* Optional: round the corners */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}
+
+#projects {
+    padding: 4rem 2rem; /* Adjust padding for consistent spacing */
+    background-color: #ffffff; /* Ensure background color is applied */
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Adjusted container for projects */
+.experience-details-container {
+    display: flex;
+    flex-direction: column; /* Stack the boxes vertically */
+    align-items: center;
+    gap: 2rem; /* Space between the boxes */
+    margin-top: 2rem;
+}
+
+/* Container for individual project boxes */
+.color-container {
+    display: flex;
+    flex-direction: row; /* Align image and text horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    text-align: left;
+    max-width: 1000px; /* Adjust width as needed */
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Style for project image */
+.project-img {
+    max-width: 400px; /* Adjust width for image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 1rem;
+    object-fit: cover; /* Ensure image covers the container */
+    display: block; /* Ensure the image behaves as a block-level element */
+    margin-right: 2rem; /* Space between the image and text */
+}
+
+/* Style for project content */
+.project-content {
+    padding: 1rem;
+    flex: 1; /* Allow content to take remaining space */
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 1.1rem; /* Slightly larger font size for better readability */
+    color: #666; /* Lighter color for description */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 1rem;
+    padding-right: 2rem; /* Add some padding on the right */
+}
+
+.project-btn-container {
+    text-align: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+#home {
+    background-color: #f0f0f0;
+}
+
+#about {
+    background-color: #ffffff;
+}
+
+
+
+#projects {
+    background-color: #f0f4c3;
+}
+
+#contact {
+    padding: 4rem 2rem; /* Adjust padding for consistent spacing */
+    background-color: #fbe9e7; /* Light background color */
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-link {
+    font-size: 1.25rem;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-link:hover {
+    color: #000;
+}
+
+.contact-icon {
+    width: 24px; /* Adjust icon size as needed */
+    height: auto;
+}
