@@ -10,8 +10,9 @@ html {
 }
 
 section {
-  scroll-padding-top: 80px; /* Adjust this value to match the height of your fixed header */
+  scroll-padding-top: 80px; 
 }
+
 
 /* HEADER */
 header {
@@ -67,6 +68,7 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
+
 /* SECTIONS */
 section {
     padding: 4vh 10rem;
@@ -75,12 +77,13 @@ section {
     width: 100%; /* Ensures section takes up full width */
 }
 
+
+/* PROFILE SECTION */
 #home {
     padding-top: 20vh; /* Add padding to move the home section down */
     background-color: #f0f0f0;
 }
 
-/* PROFILE SECTION */
 #home .hero-content {
     display: flex;
     justify-content: center;
@@ -203,17 +206,17 @@ section {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem; /* Space between the boxes */
+    gap: 2rem; 
     width: 100%;
     max-width: 1200px;
     margin-top: 2rem;
 }
 
-/* Ensure the box has enough space for the content */
+
 .box {
     flex: 1;
-    min-width: 300px; /* Minimum width of the box */
-    max-width: 600px; /* Maximum width of the box */
+    min-width: 300px; 
+    max-width: 600px; 
     padding: 2rem;
     background: white;
     border-radius: 1rem;
@@ -224,9 +227,9 @@ section {
 }
 
 .box-logo {
-    width: 80px; /* Adjust size of logo */
+    width: 80px; 
     height: auto;
-    margin-bottom: 1rem; /* Space below the logo */
+    margin-bottom: 1rem; 
 }
 
 .box h2 {
@@ -239,23 +242,23 @@ section {
 }
 
 .section-description {
-    text-align: center; /* Center-align the text */
-    font-size: 1.1rem; /* Adjust font size for better readability */
-    line-height: 1.6; /* Increase line height for better readability */
-    margin: 0 auto; /* Center-align the paragraph */
-    max-width: 800px; /* Limit the width for better readability */
-    padding: 1rem; /* Add padding around the text */
-    color: #333; /* Darker text color for contrast */
-    font-family: Arial, sans-serif; /* Optional: change font-family for better style */
-    padding-left: 1.5rem; /* Add padding to the left of the text */
-    border-radius: 0.5rem; /* Optional: round the corners */
-    background-color: #f9f9f9; /* Light background color for contrast */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+    text-align: center; 
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    margin: 0 auto; 
+    max-width: 800px; 
+    padding: 1rem; 
+    color: #333; 
+    font-family: Arial, sans-serif; 
+    padding-left: 1.5rem; 
+    border-radius: 0.5rem; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #projects {
-    padding: 4rem 2rem; /* Adjust padding for consistent spacing */
-    background-color: #ffffff; /* Ensure background color is applied */
+    padding: 4rem 2rem; 
+    background-color: #ffffff; 
     box-sizing: border-box;
 }
 
@@ -265,45 +268,41 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Adjusted container for projects */
 .experience-details-container {
     display: flex;
-    flex-direction: column; /* Stack the boxes vertically */
+    flex-direction: column; 
     align-items: center;
-    gap: 2rem; /* Space between the boxes */
+    gap: 2rem; 
     margin-top: 2rem;
 }
 
-/* Container for individual project boxes */
 .color-container {
     display: flex;
-    flex-direction: row; /* Align image and text horizontally */
-    align-items: center; /* Center items vertically */
+    flex-direction: row; 
+    align-items: center; 
     padding: 2rem;
     background: white;
     border-radius: 1rem;
     border: rgb(53, 53, 53) 0.1rem solid;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     text-align: left;
-    max-width: 1000px; /* Adjust width as needed */
+    max-width: 1000px; 
     width: 100%;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
 }
 
-/* Style for project image */
 .project-img {
-    max-width: 400px; /* Adjust width for image */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 400px;
+    height: auto;
     border-radius: 1rem;
-    object-fit: cover; /* Ensure image covers the container */
-    display: block; /* Ensure the image behaves as a block-level element */
-    margin-right: 2rem; /* Space between the image and text */
+    object-fit: cover; 
+    display: block; 
+    margin-right: 2rem; 
 }
 
-/* Style for project content */
 .project-content {
     padding: 1rem;
-    flex: 1; /* Allow content to take remaining space */
+    flex: 1; 
 }
 
 .project-title {
@@ -314,11 +313,11 @@ section {
 }
 
 .project-description {
-    font-size: 1.1rem; /* Slightly larger font size for better readability */
-    color: #666; /* Lighter color for description */
-    line-height: 1.6; /* Increase line height for better readability */
+    font-size: 1.1rem; 
+    color: #666; 
+    line-height: 1.6; 
     margin-bottom: 1rem;
-    padding-right: 2rem; /* Add some padding on the right */
+    padding-right: 2rem; 
 }
 
 .project-btn-container {
@@ -347,8 +346,8 @@ section {
 }
 
 #contact {
-    padding: 4rem 2rem; /* Adjust padding for consistent spacing */
-    background-color: #fbe9e7; /* Light background color */
+    padding: 4rem 2rem; 
+    background-color: #fbe9e7; 
     box-sizing: border-box;
 }
 
@@ -383,6 +382,6 @@ section {
 }
 
 .contact-icon {
-    width: 24px; /* Adjust icon size as needed */
+    width: 24px; 
     height: auto;
 }
